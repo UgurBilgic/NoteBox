@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+NoteBox — Web Tabanlı Not Yönetim Sistemi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NoteBox, kullanıcıların hızlı, güvenilir ve verimli şekilde not tutabilmelerini sağlayan modern bir web tabanlı not yönetim sistemidir. Uygulamanın tasarımı, kullanıcı deneyimini en üst düzeyde tutacak şekilde sade, anlaşılır ve etkileşimli bir arayüz yaklaşımıyla geliştirilmiştir. Uygulama hem fonksiyonel hem de estetik açıdan beklentileri karşılayan kapsamlı bir yazılım çözümüdür.
 
-## Available Scripts
+📘 Proje Amacı
 
-In the project directory, you can run:
+NoteBox projesinin temel amacı, kullanıcıların kişisel ve profesyonel çalışma ortamlarında ihtiyaç duyduğu not alma, düzenleme, filtreleme ve yönetim süreçlerini dijital ortamda etkin bir şekilde gerçekleştirmelerini sağlamaktır. Proje kapsamında geliştirilen kullanıcı arayüzü ve veri işleme mekanizmaları, modern yazılım mühendisliğinin gerektirdiği standartlar doğrultusunda tasarlanmıştır.
 
-### `npm start`
+🔍 Proje Özellikleri
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+NoteBox uygulaması kullanıcı deneyimini güçlendiren aşağıdaki özelliklere sahiptir:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Not Oluşturma: Kullanıcılar tek satırlık bilgi girişi ile hızlı not oluşturabilir.
 
-### `npm test`
+Not Düzenleme: Mevcut notlar düzenlenebilir ve düzenlenen veri doğrudan arayüz üzerinde güncellenir.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Not Silme: Kullanıcı istemediği notları sistemden güvenli şekilde kaldırabilir.
 
-### `npm run build`
+Not Sabitleme: Önemli notlar sabitlenerek listenin en üstünde tutulur ve önceliklendirme sağlanır.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Not Arama: Gerçek zamanlı arama sistemi ile notlar anlık olarak filtrelenir.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tarih Etiketleme: Oluşturulan notlar tarihsel olarak işaretlenerek bilginin zaman damgası tutulur.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tema Değiştirme: Karanlık ve aydınlık tema seçenekleri sayesinde farklı kullanım senaryoları desteklenir.
 
-### `npm run eject`
+Veri Saklama: Notlar tarayıcıda güvenli şekilde saklanır ve uygulama kapatılsa dahi korunur.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Bu özellikler sayesinde yazılım, kişisel bilgi yönetimi alanında güçlü bir araç olarak işlev göstermektedir.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧩 Kullanılan Teknolojiler
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Proje geliştirilirken modern web teknolojilerinden yararlanılmıştır. Bu teknolojiler aşağıda özetlenmiştir:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Teknoloji	Kullanım Alanı
+React.js	Kullanıcı arayüzünün oluşturulması
+JavaScript (ES6+)	İş mantığı ve veri işleme süreçleri
+CSS	Stil ve tasarım unsurları
+LocalStorage	Verinin tarayıcıda kalıcı olarak saklanması
+Git & GitHub	Versiyon kontrolü ve kaynak kod yönetimi
 
-## Learn More
+Bu teknoloji seçimi, uygulamanın performans, sürdürülebilirlik ve geliştirilebilirlik kriterlerini başarıyla karşılamasını sağlamıştır.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+⚙️ Kurulum ve Çalıştırma Adımları
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Uygulamanın çalıştırılması için aşağıdaki adımlar izlenmelidir:
 
-### Code Splitting
+1. Depoyu Klonlayın
+git clone https://github.com/UgurBilgic/NoteBox.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Proje Klasörüne Girin
+cd NoteBox
 
-### Analyzing the Bundle Size
+3. Bağımlılıkları Yükleyin
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Geliştirme Sunucusunu Başlatın
+npm start
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Başlatma sonrasında uygulama otomatik olarak şu adreste görüntülenir:
 
-### Advanced Configuration
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🧠 Teknik Yaklaşım ve Yazılım Mimarisi
 
-### Deployment
+NoteBox, modern yazılım geliştirme ilkeleri referans alınarak inşa edilmiştir. Projede aşağıdaki yaklaşımlar uygulanmıştır:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Bileşen Tabanlı Mimari: Uygulama UI tarafında parçalanmış, yönetilebilir ve yeniden kullanılabilir yapıda geliştirilmiştir.
 
-### `npm run build` fails to minify
+Durum Yönetimi: React’in useState ve useEffect mekanizmaları ile veri akışı kontrol edilmiştir.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Kalıcı Veri Yönetimi: Kullanıcı verisi LocalStorage üzerinden saklanmış, bu sayede tarayıcı kapatsa bile veri kaybı oluşmamıştır.
+
+Tema Yönetimi: Gövde seviyesinde tema kontrolü uygulanarak global bir kullanıcı deneyimi sağlanmıştır.
+
+Bu mimari özellikler, projenin ölçeklenebilir yapısını güçlendirmektedir.
+
+📌 Sonuç ve Değerlendirme
+
+NoteBox, tasarım prensipleri, kullanıcı deneyimi ve yazılım mimarisi açısından başarılı bir web tabanlı not yönetim sistemidir. Yazılım, gerek bireysel kullanıcıların gerekse çalışma ortamlarının ihtiyaç duyabileceği pratik not alma süreçlerini dijital platforma başarılı şekilde aktarmaktadır.
+
+Proje, modern yazılım teknolojilerinin doğru seçimi ve doğru entegrasyonu sayesinde hem fonksiyonel hem de estetik olarak öne çıkan bir çözüm niteliği taşımaktadır.
+
+✍️ Geliştirici
+
+Uğur Bilgiç
+
+GitHub: @UgurBilgic
