@@ -213,3 +213,67 @@ body.dark .theme-toggle {
 body.dark .note-list::-webkit-scrollbar-thumb {
   background: #555;
 }
+
+.search-input::placeholder {
+  color: var(--text-light);
+}
+
+.search-row {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text);
+  outline: none;
+}
+
+.search-box-left {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-left-input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text);
+  outline: none;
+}
+
+.search-left-input::placeholder {
+  color: var(--text-light);
+}
+/* Light Mode */
+body.light .search-left-input {
+  background: #fff;         /* siyah arka plan */
+  color: #fff;              /* beyaz yazı */
+  border: 1px solid #444;   /* ince border */
+}
+
+/* Dark Mode */
+body.dark .search-left-input {
+  background: #fff;         /* beyaz arka plan */
+  color: #000;              /* siyah yazı */
+  border: 1px solid #ccc;   /* ince border */
+}
+
+/* Placeholder renkleri */
+body.light .search-left-input::placeholder {
+  color: #999;
+}
+
+body.dark .search-left-input::placeholder {
+  color: #666;
+}
