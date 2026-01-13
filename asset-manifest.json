@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NoteBox/static/css/main.4016d859.css",
+    "main.js": "/NoteBox/static/js/main.1ba72a27.js",
+    "static/js/453.19f9ad36.chunk.js": "/NoteBox/static/js/453.19f9ad36.chunk.js",
+    "index.html": "/NoteBox/index.html",
+    "main.4016d859.css.map": "/NoteBox/static/css/main.4016d859.css.map",
+    "main.1ba72a27.js.map": "/NoteBox/static/js/main.1ba72a27.js.map",
+    "453.19f9ad36.chunk.js.map": "/NoteBox/static/js/453.19f9ad36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4016d859.css",
+    "static/js/main.1ba72a27.js"
+  ]
+}
