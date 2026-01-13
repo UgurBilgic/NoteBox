@@ -22,31 +22,23 @@ function App() {
     if (!note.trim()) return;
     const today = new Date();
     const formatted = today.toLocaleDateString("tr-TR");
-
-    const updated = [...notes, { text: note, date: formatted, pinned: false }];
-
+    const updated = [{ text: note, date: formatted, pinned: false }, ...notes];
     setNotes(updated);
     setNote("");
     localStorage.setItem("notes", JSON.stringify(updated));
   };
 
   const deleteNote = (i) => {
-    const confirmDelete = window.confirm(
-      "Bu notu silmek istediğine emin misin?"
-    );
-    if (!confirmDelete) return;
-
+    if (!window.confirm("Bu notu silmek istediğine emin misin?")) return;
     const updated = notes.filter((_, index) => index !== i);
     setNotes(updated);
     localStorage.setItem("notes", JSON.stringify(updated));
   };
 
   const togglePin = (i) => {
-    const updated = notes.map((n, idx) =>
-      idx === i ? { ...n, pinned: !n.pinned } : n
-    );
-
-    updated.sort((a, b) => b.pinned - a.pinned);
+    const updated = notes
+      .map((n, idx) => (idx === i ? { ...n, pinned: !n.pinned } : n))
+      .sort((a, b) => b.pinned - a.pinned);
 
     setNotes(updated);
     localStorage.setItem("notes", JSON.stringify(updated));
@@ -59,11 +51,9 @@ function App() {
 
   const finishEdit = (i) => {
     if (!editingText.trim()) return;
-
     const updated = notes.map((n, idx) =>
       idx === i ? { ...n, text: editingText } : n
     );
-
     setNotes(updated);
     localStorage.setItem("notes", JSON.stringify(updated));
     setEditingIndex(null);
@@ -81,6 +71,7 @@ function App() {
   return (
     <div className="container">
       <button className="theme-toggle" onClick={() => setDark(!dark)}></button>
+
       <div className="search-box-left">
         <input
           className="search-left-input"
@@ -131,7 +122,7 @@ function App() {
                   )}
                 </div>
 
-                <div className="note-actions">
+                <div className="note-actions bottom">
                   {editingIndex === index ? (
                     <button
                       className="edit-btn"
